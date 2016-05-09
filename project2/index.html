@@ -1,0 +1,424 @@
+<DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		  <link rel="stylesheet" href="css/demo.css">
+		  <link href="css/custom.css" rel="stylesheet">
+			  <style>
+			
+			 <!--vertical carousel code completed-->
+			 
+			
+	
+    <!--rating start code in css-->
+
+      
+		  </style>
+	</head>
+<body>
+
+	<!--navbar-->
+	<p id="ashu"></p>
+	<nav class="navbar navbar-default navbar-fixed-top" id="nav-1">
+		<div class="container-fulid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+			</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+				<p id="ashu"></p>
+				<a href="#"><img src="images/logo.jpg" alt="noimage" width="50px" height="60px" style="margin-left:50px;"/></a>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="link-1" href="#">ABOUT</a></li>
+						<li><a class="link-1" href="#">DONORS</a></li>
+						<li><a class="link-1" href="#">RECIPIENT</a></li>
+						<li><a class="link-1" data-toggle="modal" href="#myReni" style="color:red;">JOIN US</a></li>
+						<li><a class="link-1" data-toggle="modal" href="#myModal" style="color:#00BFFF;margin-right:15px;">LOG IN</a></li>
+					</ul>
+		    </div>
+		</div>
+	</nav>
+	<!-- nav bar code completed-->
+	<br/>
+	<br/>
+	<!--carousel-->
+<!--Carousel is starting-->
+	<script type="text/javascript">
+	    var slideimages = new Array() 
+		slideimages[0] = new Image() 
+		slideimages[0].src = "images/bighand1.jpg" 
+		slideimages[1] = new Image()
+		slideimages[1].src = "images/bighand2.jpg"
+		slideimages[2] = new Image()
+		slideimages[2].src = "images/bighand3.jpg"
+		slideimages[3] = new Image()
+		slideimages[3].src = "images/bighand4.jpg"
+	</script>
+
+	<img src="images/bighand1.jpg" id="slide" style="position:relative;width:100%;win-width:600px;height:100px auto"/>
+	<script type="text/javascript">
+		var step=0
+		function slideit(){
+		if (!document.images)
+		return
+		document.getElementById('slide').src = slideimages[step].src
+		if (step<3)
+		step++
+		else
+		step=0
+		setTimeout("slideit()",4400)
+		}
+		slideit()
+    </script>
+		<!--carousel completed-->
+		
+		
+		<!-- buttons-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="row">
+				    <ul class="nav nav-tabs " >
+					    <div class="col-md-6" style="width:390px;background-color:red; height:50px;text-align:center;">
+					         <li><a   data-toggle="modal" href="#myAshuuu" style="color:white;">Donate</a></li>
+					    </div>
+					    <div class="col-md-6" style="width:390px;background-color:#1E90FF; height:50px;text-align:center;">					
+						     <li><a  data-toggle="tab" href="#" style="color:white;">Raise a request</a></li>
+					    </div>
+					</ul>
+			    </div>		
+             <!--options-->
+		      	<div class="row">
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+			     		 <a href="#">
+							<div id="space">Cloths</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Books</div>
+						 </a>
+					</div>
+					 <div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Food</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Blood</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Medicine</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Education</div>
+						 </a>
+					</div>
+				</div>
+				<!-- 1st list completed-->
+				<div class="row">
+					<div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">MedicalCheckUps</div>
+			     		 </a>
+					</div>
+					<div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Bike Ride</div>
+						 </a>
+					</div>
+					 <div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Car Ride</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+	     				 <a href="#">
+							<div id="space">Shoe</div>
+						 </a>
+		    		 </div>
+					<div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Service</div>
+						</a>
+					</div>
+					<div class="col-md-2" style="background-color:white; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Turions</div>
+						 </a>
+			       </div>
+				</div>
+				<!--2nd list completed-->
+				<div class="row">
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Shelter</div>
+						 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Furniture</div>
+						 </a>
+					</div>
+					 <div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+					    <a href="#">
+							<div id="space">Electronics</div>
+			     		 </a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;">
+						 <a href="#">
+							<div id="space">Mobiles&Accessories</div>	
+						</a>
+					</div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;"></div>
+					<div class="col-md-2" style="background-color:#DCDCDC; height:100px; text-align:center;"></div>
+				</div>
+			</div>
+			<!--options completed-->				
+			 <div class="col-md-2"></div>
+		</div>
+	</div>
+	<br/>
+		<!--button code completed-->
+		
+		<!-- Donate and recieve-- vertical carousel-->
+<div class="container" style="background-color:	#DCDCDC;">
+     <div class="row">
+		<div class="col-md-6">  
+			<div class="row-fluid">
+			     <div class="span6 offset3">
+					<div id="aswini" class="carousel slide vertical">
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+						<div class="active item">
+								 <img src="images/h4.jpg">
+							 </div>
+							 <div class="item">
+								 <img src="images/h2.jpg">
+							 </div>
+							 <div class="item">
+								 <img src="images/d2.jpg">
+							 </div>
+							 <div class="item">
+								 <img src="images/d3.jpg">
+							 </div>
+						</div>
+						<!-- Carousel nav -->
+						
+					</div>
+			     </div>
+		     </div>
+		</div>
+			
+		<div class="col-md-6">
+		    <div class="span6 offset3">
+	            <div id="reni" class="carousel slide vertical">
+            <!-- Carousel items -->
+			        <div class="carousel-inner">
+			             <div class="active item">
+                             <img src="images/r1.jpg">
+                         </div>
+                         <div class="item">
+                             <img src="images/r2.jpg">
+                         </div>
+                         <div class="item">
+                             <img src="images/r3.jpg">
+                         </div>
+                    </div>
+            <!-- Carousel nav -->
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+         
+		 <script>
+		 $('.carousel').carousel({
+         interval: 3000
+         })
+
+		 </script>
+		<!--vertical code completed-->
+		<br/>
+		
+		<!-- here we are using panel that means webpage ending -->
+		<p></p>
+		<!--completed-->
+		
+		<!-- icon code -->
+<div class="row">
+	<div class="col-md-4"></div>
+	
+    <div class="col-md-4">
+		<div class="row">
+			<center>
+		         <h4>Download The App</h4>
+				    <div class="col-md-2">
+						 <div id="rcorners9"><a href="#"><img src="images/apple.jpg" alt="noimage" width="30px" height="30px" /></a></div>
+					</div>
+					<div class="col-md-2">
+					     <div id="rcorners9"><a href="#"><img src="images/android.png" alt="noimage" width="30px" height="30px"/></a></div>
+					</div>
+					<div class="col-md-2">
+					     <div id="rcorners9"><a href="#"><img src="images/window.png" alt="noimage" width="30px" height="30px"/></a></div>
+					</div>
+		    </center>
+		</div>
+	</div>
+	 <div class="col-md-4">
+		 <img src="images/logo.jpg" alt="noimage" width="80px" height="100px"  style="margin-top:100px;  margin-left:130px;"/>
+	 </div>
+</div>
+<!-- icons code end-->
+<!--border color-->
+<p id="ashu"></p>
+	<!-- login page-->
+	<div class="modal fade" id="myModal" role="dialog">
+         <div class="modal-dialog">
+         <!-- Modal content -->
+             <div class="modal-content" style="background-color:#D3D3D3">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+		                 <center>
+                             <h4 class="modal-title">Login</h4>
+		                 </center>
+                </div>
+                <div class="modal-body">
+		             <center>
+                         <input   type="text" name="name" placeholder="Email" style="text-align:center"/><br/><br/>
+		                 <input   type="password" name="password" placeholder="Password" style="text-align:center"/><br/><br/>
+		                 <button type="button" class="btn btn-danger">Log In</button>
+		                 <button type="button" class="btn btn-default">Join Us</button><br/><br/>
+		                 <a href="forgot.html"> Forgot Password ?</a>
+		             </center>
+                </div>   
+            </div>
+        </div>
+   </div>
+  
+  <!--register page-->
+	<div class="modal fade" id="myReni" role="dialog">
+         <div class="modal-dialog">
+    <!-- Modal content -->
+             <div class="modal-content" style="background-color:#D3D3D3">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+		             <center>
+                         <h4 class="modal-title">Register Here</h4>
+		             </center>
+                </div>
+                <div class="modal-body">
+		            <center>
+					    <input  type="text" name="user" placeholder="First Name & Last Name" style="text-align:center" /><br/><br/>
+						<input  type="text" name="user1" placeholder="Email Id" style="text-align:center"/><br/><br/>
+						<input  type="text" name="location" placeholder="Location" style="text-align:center"/><br/><br/>
+						<input   type="password" name="password" placeholder="Password" style="text-align:center"/><br/><br/>
+						<button type="button" class="btn btn-danger">Join Us</button>
+						<button type="button" class="btn btn-info">Log In</button><br/><br/>
+						Or<br/>
+						
+						<a href="#" class="share-button share-via-facebook">
+				             <i class="fa fa-facebook"></i>
+				           Facebook
+			            </a>
+						<a href="#" class="share-button share-via-twitter">
+				             <i class="fa fa-twitter"></i>
+				            Twitter
+			             </a>
+						 <br/>
+						
+					    <a href="#" class="share-button share-via-instagram">
+				             <i class="fa fa-instagram"></i>
+				            Instagram
+			             </a>
+				    	<a href="#" class="share-button share-via-linkedin">
+				             <i class="fa fa-linkedin"></i>
+				            Linkedin
+			             </a>
+		            </center>
+                </div>   
+            </div>
+      </div>
+    </div>
+<!--category code-->
+
+
+<!-- Modal -->
+	<div class="modal fade" id="myAshuuu" role="dialog">
+		 <div class="modal-dialog">
+		<!-- Modal content-->
+			 <div class="modal-content" style="background-color:#D3D3D3">
+				 <div class="modal-header">
+				     <button type="button" class="close" data-dismiss="modal">&times;</button>
+   				 </div>
+				<div class="modal-body">
+				     
+					<select  style="width:150px;border:1px solid black;" >
+					    <option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				
+					<select style="width:150px;border:1px solid black;" >
+					    <option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					
+					<select style="width:150px;border:1px solid black;" >
+					     <option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				<br/>
+				<br/>
+					<select style="width:150px;border:1px solid black;" >
+					    <option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<select style="width:150px; border:1px solid black;" >
+                        <option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				<br/><br/>
+					<textarea rows="4" cols="50" placeholder="Description"></textarea>
+				<br/><br/>
+					<button type="button" class="btn btn-default" data-dismiss="modal">submit</button>
+				 </div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+	
+<!--End category-->
+
+
+		
+</body>
+</html>

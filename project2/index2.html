@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script>
+	
+	</script>
+	</head>
+    <body>
+    <!--navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav-1">
+		<div class="container-fulid">
+			<div class="navbar-header">
+			<a href="#"><img src="images/logo.jpg" alt="noimage" width="50px" height="60px" style="margin-left:50px;"/></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+			</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+				<p id="ashu"></p>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="link-1" href="#">About</a></li>
+					<li><a class="link-1" href="#">Donors</a></li>
+					<li><a class="link-1" href="#">Recipient</a></li>
+					<li><a  class="link-1" data-toggle="modal" href="#myMoto" style="color:#00BFFF;margin-right:15px;">JoinUs/LogIn</a></li>
+				</ul>
+		    </div>
+		</div>
+	</nav>
+	<!-- nav bar code completed-->
+	<br/>
+	<br/>
+	<!--carousel-->
+<!--Carousel is starting-->
+	<script type="text/javascript">
+	    var slideimages = new Array() 
+		slideimages[0] = new Image() 
+		slideimages[0].src = "images/bighand1.jpg" 
+		slideimages[1] = new Image()
+		slideimages[1].src = "images/bighand2.jpg"
+		slideimages[2] = new Image()
+		slideimages[2].src = "images/bighand3.jpg"
+	</script>
+    <img src="images/bighand1.jpg" id="slide" style="position:relative;width:100%;win-width:600px;height:350px;"/>
+	<script type="text/javascript">
+		var step=0
+		function slideit(){
+		if (!document.images)
+		return
+		document.getElementById('slide').src = slideimages[step].src
+		if (step<2)
+		step++
+		else
+		step=0
+		setTimeout("slideit()",4400)
+		}
+		slideit()
+		
+	    <!
+		 $('.carousel').carousel({
+		 interval: 3000
+		 })
+		 
+		 $(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+		});
+
+    </script>
+		<!--carousel completed-->
+		<!-- buttons-->
+ <div class="container">
+<!--button nav bar code-->
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">			
+			<div class="row">
+				<div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" id="line1" >
+					 <a  href="#demo1" onclick="myDisplay1()" ><div class="button_sliding_bg">Donate</div></a>
+				</div>
+				<div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" id="line2">
+					 <a  href="#" ><div class="button_sliding_bg1">Donated</div></a>
+				</div>
+				<div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" id="line3" >
+					 <a  href="#demo2" onclick="myDisplay2()"><div class="button_sliding_bg2">Receive</div></a>
+				</div>    
+				<div class="col-sm-3 col-lg-3 col-md-3 col-xs-12" id="line4" >
+					 <a  href="#"><div class="button_sliding_bg3">Received</div></a>
+				</div>    
+			</div>
+			<!--glyphicon category code 1st phase-->
+	<div id="ashuu">		
+		<div class="row" id="renu1">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Food!"><i class="glyphicon glyphicon-cutlery" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="renu">
+				 <a href="#" data-toggle="tooltip"  title="Cloth!"><img src="images/cloth.png" width="20px" height="20px" /></a>  
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Money!"><i class="fa fa-money" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Shelter!"><i class="glyphicon glyphicon-home" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Education!"><i class="fa fa-graduation-cap" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 " >
+				  <a href="#" data-toggle="tooltip"  title="Medicien!"><i class="fa fa-plus-square" id="space"></i></a>
+			</div>
+	    </div>
+		<!--glyphicon category code completed-->
+		<!--glyphicon category code 2nd phase-->
+		<div class="row" id="renu1">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Service!"><i class="fa fa-bus" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"  >
+				 <a href="#" data-toggle="tooltip"  title="CarRide!"><i class="fa fa-car" id="space"></i></a>  
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Furniture!"><i class="fa fa-bed" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Electronics!"><i class="fa fa-desktop" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Mobiles & Accessor!"><i class="glyphicon glyphicon-phone" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 " >
+				  <a href="#" data-toggle="tooltip"  title="Blood!"><i class="glyphicon glyphicon-tint" id="space"></i></a>
+			</div>
+	    </div>
+		<div class="row" id="renu1">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Medical CheckUps!"><i class="fa fa-ambulance" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"  >
+				 <a href="#" data-toggle="tooltip"  title="Bike Ride!"><i class="fa fa-motorcycle" id="space"></i></a>  
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Book!"><i class="glyphicon glyphicon-book" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+				 <a href="#" data-toggle="tooltip"  title="Turtion!"><i class="fa fa-graduation-cap" id="space"></i></a>
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ></div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 " ></div>
+	    </div>
+		<!--glyphicon category code completed-->
+        </div>	
+        
+		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"></div>
+		<!-- button nav bar code completed-->
+		</div>
+	</div>
+
+
+<div id="demo" class="overflow">
+<div class="container">
+<center>
+<h5>Receive Form</h5>
+	
+
+	<tr>
+		<td>
+			<select class="form">
+				<option value="#">Category</option>
+				<option value="#"></option>
+				<option value="#"></option>
+				<option value="#"></option>
+			</select>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<select class="form" >
+				<option value="#">Subcategory</option>
+				<option value="#"></option>
+				<option value="#"></option>
+				<option value="#"></option>
+				<option value="#"></option>
+			</select>
+		</td>
+	</tr>
+      
+	<tr>
+		<td>
+			<select class="form">
+				<option value="#">location</option>
+				<option value="#"></option>
+				<option value="#"></option>
+				<option value="#"></option>
+				<option value="#"></option>
+			</select>
+		</td>
+	</tr>
+	
+	<br/><br/>
+	<tr>
+		<td>
+			<textarea rows="4" cols="50" placeholder="Description"></textarea>
+		</td>
+	</tr>
+	<br/><br/>
+	<input type="submit" value="Send">
+	</center>
+  </div>
+  </div>
+  
+  <div id="demo1" class="overflow">
+  <center>
+<h5>Donate Form</h5>
+
+ <?Php
+
+
+			///////// Getting the data from Mysql table for first list box//////////
+			$quer2="SELECT DISTINCT category,cat_id FROM category order by category"; 
+			///////////// End of query for first list box////////////
+
+			/////// for second drop down list we will check if category is selected else we will display all the subcategory///// 
+			@$cat=$_GET['cat']; // This line is added to take care if your global variable is off
+			if(isset($cat)and strlen($cat) > 0){
+			$quer="SELECT DISTINCT subcategory,subcat_id FROM subcategory where cat_id=$cat order by subcategory"; 
+			}else{$quer="SELECT DISTINCT subcategory,subcat_id FROM subcategory order by subcategory"; } 
+			////////// end of query for second subcategory drop down list box ///////////////////////////
+
+
+			/////// for Third drop down list we will check if sub category is selected else we will display all the subcategory3///// 
+			@$cat3=$_GET['cat3']; // This line is added to take care if your global variable is off
+			if(isset($cat3) and strlen($cat3) > 0){
+			$quer3="SELECT DISTINCT subcat2 FROM subcategory2 where subcat_id=$cat3 order by subcat2"; 
+			}else{$quer3="SELECT DISTINCT subcat2 FROM subcategory2 order by subcat2"; } 
+			////////// end of query for third subcategory drop down list box ///////////////////////////
+
+
+			echo "<form method=post name=f1 action='dd3ck.php'>";
+			//////////        Starting of first drop downlist /////////
+			echo "<select name='cat' onchange=\"reload(this.form)\"><option value=''>Select one</option>";
+			foreach ($dbo->query($quer2) as $noticia2) {
+			if($noticia2['cat_id']==@$cat){echo "<option selected value='$noticia2[cat_id]'>$noticia2[category]</option>"."<BR>";}
+			else{echo  "<option value='$noticia2[cat_id]'>$noticia2[category]</option>";}
+			}
+			echo "</select>";
+			//////////////////  This will end the first drop down list ///////////
+
+			//////////        Starting of second drop downlist /////////
+			echo "<select name='subcat' onchange=\"reload3(this.form)\"><option value=''>Select one</option>";
+			foreach ($dbo->query($quer) as $noticia) {
+			if($noticia['subcat_id']==@$cat3){echo "<option selected value='$noticia[subcat_id]'>$noticia[subcategory]</option>"."<BR>";}
+			else{echo  "<option value='$noticia[subcat_id]'>$noticia[subcategory]</option>";}
+			}
+			echo "</select>";
+			//////////////////  This will end the second drop down list ///////////
+
+
+			//////////        Starting of third drop downlist /////////
+			echo "<select name='subcat3' ><option value=''>Select one</option>";
+			foreach ($dbo->query($quer3) as $noticia) {
+			echo  "<option value='$noticia[subcat2]'>$noticia[subcat2]</option>";
+			}
+			echo "</select>";
+			//////////////////  This will end the third drop down list ///////////
+
+
+			echo "<input type=submit value='Submit the form data'></form>";
+			?>
+			<br><br>
+			<a href=dd3.php>Reset and Try again</a>
+  </div>
+  
+	<br/>
+		<!--vertical slider-->
+<div class="container" style="background-color:	#DCDCDC;">	
+	<div class="row" >
+		<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">  
+			<div class="row-fluid">
+				<div class="span6 offset3">
+					<div id="aswini" class="carousel slide vertical">
+					<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item">
+								 <img src="images/h4.jpg">
+							</div>
+							<div class="item">
+								 <img src="images/h2.jpg">
+							</div>
+							<div class="item">
+							    <img src="images/d2.jpg">
+							</div>
+				     	     <div class="item">
+								<img src="images/d3.jpg">
+							</div>
+						</div>
+						<!-- Carousel nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+			<div class="span6 offset3">
+				<div id="reni" class="carousel slide vertical">
+				<!-- Carousel items -->
+					<div class="carousel-inner">
+						<div class="active item">
+						     <img src="images/r1.jpg">
+						</div>
+						<div class="item">
+						     <img src="images/r2.jpg">
+						</div>
+						<div class="item">
+						     <img src="images/r3.jpg">
+						</div>
+					</div>
+					<!-- Carousel nav -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+		<!--vertical code completed-->
+		<p></p>
+	<!--download app code-->
+<div class="container-fluid">
+	<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <h4>Download The App</h4>
+		 <a href="#" id="rcorners9"><i class="fa fa-apple" style="color:red;font-size:1.5em;"></i></i></a>
+		 <a href="#" id="rcorners9"><i class="fa fa-android" style="color:red;font-size:1.5em;"></i></a>
+		 <a href="#" id="rcorners9"><i class="fa fa-windows" style="color:red;font-size:1.5em;"></i></i></a>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <img src="images/logo.jpg" alt="noimage" width="80px" height="80px"  style="margin-top:100px;  margin-left:130px;"/>
+    </div>
+	</div>
+</div>
+	<!--download app code completed-->
+	<p id="ashu"></p>
+	<!--Login Register forgot Password code-->
+<div class="modal fade" id="myMoto" role="dialog">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content" style="background-color:#DCDCDC">
+			<div class="modal-header">
+			     <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			<!--Login-->
+				<div id="aa">
+				<center>
+				<form method="POST" action="Login.php" enctype="multipart/form-data">
+					<input type="text" name="emailid" placeholder="Email" id="txt"><br/><br/>
+			        <input type="password" name="password" placeholder="password" id="txt"><br/><br/>
+					<input type="submit" name="submit" value="login" onclick="myFunction()">
+					<input type="button" name="join" value="JoinUs" onclick="myFunction3()" ><br/><br/>
+				    <a href="#" onclick="myFunction4()">Forgot Password?</a>
+				</form>
+				</center>
+				</div>
+				<!--forgot password-->
+				<div id="bb" class="overflow">
+				<center>
+					<form method="POST" action="..." onsubmit="return checkForm(this);">
+					     <h4>Password Recovery</h4>
+						<h5>Welcome Back,</h5>
+						<h5>In the fields below enter your new password</h5>
+						<input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" placeholder="password"  type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+						  this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+						  if(this.checkValidity()) form.pwd2.pattern = this.value;  id="txt"><br/><br/>
+						<input title="Please enter the same Password as above" placeholder="conform password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" onchange="
+						  this.setCustomValidity(this.validity.patternMismatch ? this.title : '');  id="txt"><br/><br/>
+						<input type="submit" value="Save Changes">
+					</form>
+				</center>	
+				</div>
+				<!--register-->
+				<div id="cc" class="overflow">
+				<form method="POST" action="Registration.php" enctype="multipart/form-data">
+				<center>
+				     <input type="text" name="user" placeholder="UserName" id="txt"><br/><br/>
+     	     		 <input type="text" name="emailid" placeholder="Email Id" id="txt"><br/><br/>
+					 <input type="password" name="password" placeholder="password" id="txt"><br/><br/>
+					 <input type="text" name="phonenum" placeholder="phoneNo" id="txt"><br/><br/>
+					 <input type="text" name="location" placeholder="location" id="txt"><br/><br/>
+				     <input type="submit" name="submit" value="JoinUs" onclick="myFunction1()" id="colour">
+					 <input type="button" name="login" value="Login" onclick="myFunction()" ><br/><br/>
+					 or<br/>
+					 <a href="#"><button type="button" style="color:gray;"><i class="fa fa-twitter">&nbsp Twitter</i></button></a>
+					 <a href="#"><button type="button" style="color:gray;"><i class="fa fa-facebook-square">&nbsp Facebook</i></button><br/><br/></a>
+					 <button type="button" style="color:gray;"><i class="fa fa-linkedin">&nbsp Linkedin</i></button>
+					 <button type="button" style="color:gray;"><i class="fa fa-instagram">&nbsp Instagram</i></button>
+				</center>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+<!--
+function myDisplay1() {
+	    document.getElementById("ashuu").style.display = "none";
+		document.getElementById("demo").style.display = "block";
+		document.getElementById("demo1").style.display = "none";
+	}
+	function myDisplay2() {
+	   document.getElementById("ashuu").style.display = "none";
+		document.getElementById("demo").style.display = "none";
+		document.getElementById("demo1").style.display = "block";
+	}
+	<!--Donate ,Donated,Recevied,receive-->
+	function myFunction() {
+	   document.getElementById("aa").style.display = "block";
+		document.getElementById("bb").style.display = "none";
+		document.getElementById("cc").style.display = "none";
+	}
+	function myFunction4() {
+	   document.getElementById("aa").style.display = "none";
+		document.getElementById("bb").style.display = "block";
+		document.getElementById("cc").style.display = "none";
+	}
+	function myFunction3() {
+	   document.getElementById("aa").style.display = "none";
+		document.getElementById("bb").style.display = "none";
+		document.getElementById("cc").style.display = "block";
+	}
+	
+function reload(form)
+		{
+		var val=form.cat.options[form.cat.options.selectedIndex].value; 
+		self.location='dd3.php?cat=' + val ;
+		}
+		function reload3(form)
+		{
+		var val=form.cat.options[form.cat.options.selectedIndex].value; 
+		var val2=form.subcat.options[form.subcat.options.selectedIndex].value; 
+
+		self.location='dd3.php?cat=' + val + '&cat3=' + val2 ;
+		}
+
+	<!--login register forgot password end-->
+
+	 $('.carousel').carousel({
+	 interval: 3000
+	 })
+	 
+	 $(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip(); 
+	});
+	
+	
+</script>
+</body>
+</html>				
+			  

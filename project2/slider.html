@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+		var slideimages = new Array() 
+		slideimages[0] = new Image() 
+		slideimages[0].src = "images/a1.jpg" 
+		slideimages[1] = new Image()
+		slideimages[1].src = "images/a2.jpg"
+		slideimages[2] = new Image()
+		slideimages[2].src = "images/a3.jpg"
+
+</script>
+
+<img src="images/a1.jpg" id="slide" style="position:relative;width:100%;win-width:600px;height:200px auto"/>
+<script type="text/javascript">
+var step=0
+function slideit(){
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",4400)
+}
+
+slideit()
+</script>
+</head>
+</html>

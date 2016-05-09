@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+            line{
+			text-decoration:none;
+		     }
+			.carousel-inner > .item > img,
+			.carousel-inner > .item > a > img {
+				width: 100%;
+				margin: auto;
+			 }
+			  
+            p{
+             border: 5px solid gray;
+             }
+			 #rcorners9 {
+			 border: 1px solid #00CED1;
+             border-radius: 50%;
+             margin-left:130px;
+             width: 50px;
+             height: 40px;
+            }
+		     #ashu{
+			  border: 2px solid red;
+			 }	
+			 #space{
+			 padding-top: 40px;
+			 color:black;
+			 }
+			 <!-- vertical carousel style-->
+			 .vertical .carousel-inner {
+			  height: 30%;
+			  width:20%;
+			 }
+
+			.carousel.vertical .item {
+			  -webkit-transition: 0.6s ease-in-out top;
+				 -moz-transition: 0.6s ease-in-out top;
+				  -ms-transition: 0.6s ease-in-out top;
+				   -o-transition: 0.6s ease-in-out top;
+					  transition: 0.6s ease-in-out top;
+			}
+
+			.carousel.vertical .active {
+			  top: 0;
+			}
+
+			.carousel.vertical .next {
+			  top: 200px;
+			}
+
+			.carousel.vertical .prev {
+			  top: -200px;
+			}
+
+			.carousel.vertical .next.left,
+			.carousel.vertical .prev.right {
+			  top: 0;
+			}
+
+			.carousel.vertical .active.left {
+			  top: -200px;
+			}
+
+			.carousel.vertical .active.right {
+			  top: 200px;
+			}
+
+			.carousel.vertical .item {
+				left: 0;
+			}
+			<!--rating-->
+			.rating {
+          overflow: hidden;
+          display: inline-block;
+      }
+      .rating-input {
+          position: absolute;
+          left: 0;
+          top: -50px;
+      }
+      .rating-star {        
+          display: block;
+          //float: right;	  
+            width: 16px;
+            height: 16px;
+          background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+      }
+      .rating-star:hover,
+      .rating-star:hover ~ .rating-star,
+      .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+	  
+	  #asw{
+	  margin-left:150px;
+	  }
+	  .share-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 12px;
+			width: 80px;
+			border-radius: 2px;
+			margin:	25px 10px;
+		}
+
+	  .share-via-facebook{
+			background-color:gray;
+		}
+
+		.share-via-twitter{
+			background-color:gray;
+		}
+		.share-via-instagram{
+			background-color:gray;
+		}
+		.share-via-linkedin{
+			background-color:gray;
+		}
+		
+
+		#nav-1 {
+		  background:white;
+		}
+		.link-1 {
+		  transition: 0.3s ease;
+		  background: white;
+		  text-decoration: none;
+		  border-bottom: 4px solid white;
+		 }
+		.link-1:hover {
+		 border-bottom: 4px solid #00BFFF;
+		}
+			
+</style>
+</head>
+<body>
+</body>
+</html>

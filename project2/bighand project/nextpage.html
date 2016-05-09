@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  <style>
+		.sideway{
+			padding-left:45px;
+			padding-top:10px;
+		}
+		 #xyz{
+			border:1px solid black;
+			
+			}
+			
+	  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+		<a href="#"><img src="images/logo.jpg" alt="noimage" width="60px" height="60px" style="margin-left:18px;"/></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+			<li><a  href="#about">About</a></li>
+			<li><a  href="#category" >Categories</a></li>
+			<li><a  href="#donated" >Donated</a></li>
+			<li><a  href="#donated" >Received</a></li>
+			<li><a  href="#stroyboard" >Storyboard</a></li>
+			<li><a  href="#openModal" data-toggle="#openModal"style="color:#00BFFF;margin-right:15px;" >JoinUs/LogIn</a></li>
+	   </ul> 
+    </div>
+  </div>
+</nav>
+<br/>
+<br/>
+<br/>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-xs-12 col-lg-3 sideway">
+			<a href="">Name</a><br/>
+			<a href="">Donated</a><br/>
+			<a href="">Received</a><br/>
+			<a href="">Storyboard</a><br/>
+		</div>
+		<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6 sideway" style="background-color:lightgrey">
+			<div class="row">
+				<div class="col-md-1 col-lg-1"></div>
+				<div class="col-md-10 col-lg-10">
+					<center><h4 style="color:red;">Donate Form</h4></center>
+					<input type="text" name="name"   placeholder="subject" id="xyz">
+					<select class="form" id="xyz">
+						<option value="#">Category</option>
+						<option value="#">Food</option>
+						<option value="#">Cloth</option>
+						<option value="#">Money</option>
+						<option value="#">Shelter</option>
+						<option value="#">Education</option>
+						<option value="#">Medicien</option>
+						<option value="#">Service</option>
+						<option value="#">CarRide</option>
+						<option value="#">Funiture</option>
+						<option value="#">Electronics</option>
+						<option value="#">Mobiles&Accessor</option>
+						<option value="#">Blood</option>
+						<option value="#">Medical CheckUps</option>
+						<option value="#">Bike Ride</option>
+						<option value="#">Books</option>
+						<option value="#">Turtion</option>
+					</select>
+					<select class="form" id="xyz">
+						<option value="#">Subcategory</option>
+						<option value="#"></option>
+						<option value="#"></option>
+						<option value="#"></option>
+						<option value="#"></option>
+					</select><br/><br/>
+					<select class="form" id="xyz">	
+						<option value="#">location</option>
+						<option value="#"></option>
+						<option value="#"></option>
+						<option value="#"></option>
+						<option value="#"></option>
+					</select>
+					<input type="file" style="float:right" ><br/><br/>	
+					<textarea class="form-control" rows="9" cols="50" placeholder="Description" id="txt"></textarea><br/>
+					<center><input type="submit" value="Send" id="xyz"></center>
+				</div>
+				
+				<div class="col-md-1 col-lg-1"></div>
+			</div>
+         </div>
+		<div class="col-sm-3 col-md-3 col-xs-12 col-lg-3 ">
+			<p>U can add next felid wt you want you can use this columns</p>
+		</div>
+	</div>
+</div>
+	
+
+
+</body>
+</html>
